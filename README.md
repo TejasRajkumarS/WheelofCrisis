@@ -1,278 +1,220 @@
-# 🎡 Wheel of Crisis
+# Wheel of Crisis
 
-### Spin. Strategize. Survive the Crisis.
+**An interactive corporate crisis-management simulation.**
 
-**Wheel of Crisis** is an interactive corporate crisis-management simulation where players navigate high-stakes boardroom challenges across four industries. Spin the wheel to uncover a crisis, evaluate strategic options, and explore the consequences of decisions on financial performance, corporate reputation, and organizational risk.
+Navigate high-stakes business crises, evaluate strategic options, and explore the consequences of boardroom decisions across four industries. Spin the wheel, make your decision, and analyze the projected impact on capital, corporate reputation, and risk.
 
 <p align="center">
   <a href="https://wheelofcrisis.gt.tc/?i=1">
-    <img src="https://img.shields.io/badge/🌐_Live_Demo-Launch_Wheel_of_Crisis-14B8A6?style=for-the-badge" alt="Launch Wheel of Crisis Live Demo" />
+    <img src="https://img.shields.io/badge/Live%20Demo-Launch%20Application-0D9488?style=for-the-badge" alt="Launch Wheel of Crisis" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" alt="React 19" />
-  <img src="https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/TypeScript-Enabled-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite-Powered-646CFF?logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
 </p>
 
 ---
 
-## 📌 Table of Contents
-
-- [Live Demo](#-live-demo)
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Industry Sectors](#-industry-sectors)
-- [How It Works](#-how-it-works)
-- [Technology Stack](#-technology-stack)
-- [Getting Started](#-getting-started)
-- [Available Scripts](#-available-scripts)
-- [Project Structure](#-project-structure)
-- [Application Architecture](#-application-architecture)
-- [License](#-license)
-
----
-
-## 🌐 Live Demo
-
-Experience the simulation directly in your browser.
+## Live Application
 
 **Website:** https://wheelofcrisis.gt.tc/?i=1
 
-[**▶ Launch Wheel of Crisis**](https://wheelofcrisis.gt.tc/?i=1)
+Open the live application to experience the crisis simulation directly in your browser.
 
----
+## Overview
 
-## 🚀 Overview
+Wheel of Crisis transforms corporate crisis management into an interactive, decision-driven experience. Players encounter realistic business challenges, assess their options, and evaluate the projected consequences of their strategic choices.
 
-In business, a single decision can have significant financial and reputational consequences. **Wheel of Crisis** turns that challenge into an interactive strategic simulation.
+The application combines an interactive canvas-based wheel, scenario-driven gameplay, consequence analysis, and procedurally generated audio.
 
-Players encounter corporate crises, assess the situation, choose a response, and review the projected consequences of their decisions.
+### At a Glance
 
-### At a glance
-
-| Component | Description |
+| Component | Details |
 |---|---|
 | Industry sectors | 4 |
 | Corporate crisis scenarios | 16 |
-| Interactive wheel | Canvas-based spinning simulation |
-| Decision system | Strategic choices with measurable consequences |
-| Consequence metrics | Financial impact, reputation effects, and risk levels |
-| Audio experience | Procedurally generated sound effects |
-| Application type | Interactive web application |
+| Scenario selection | Interactive spinning wheel |
+| Decision-making | Strategic choices and outcome analysis |
+| Impact metrics | Financial impact, reputation effects, and risk levels |
+| Audio | Procedurally generated sound effects |
 
----
+## Features
 
-## ✨ Key Features
+### Interactive Crisis Wheel
+A canvas-rendered spinning wheel provides an engaging way to select corporate crisis scenarios, supported by animation and audio feedback.
 
-### 🎯 Interactive Crisis Wheel
-Explore an animated, canvas-rendered wheel designed to make crisis selection engaging. Its spinning behavior, segment transitions, and sound feedback create a tactile experience.
+### Industry-Based Scenarios
+Explore crisis scenarios across four business sectors, each representing a different industry context.
 
-### 🏢 Four Industry Sectors
-Choose from four industries, each presenting its own corporate context and crisis scenarios.
+### Strategic Decision-Making
+Review a crisis, evaluate the available strategic responses, and make decisions based on the information presented.
 
-### 🧩 Strategic Decision-Making
-Evaluate response options for each crisis. Every decision presents strategic trade-offs that challenge players to think about business priorities and potential consequences.
+### Consequence Analysis
+Understand the projected implications of each decision through three key dimensions:
 
-### 📊 Consequence Analysis
-Review the projected effects of strategic decisions through three core dimensions:
+- **Financial impact:** Projected capital consequences.
+- **Corporate reputation:** Changes in reputational standing.
+- **Risk level:** The associated level of strategic risk.
 
-- **Financial impact** — projected capital consequences.
-- **Corporate reputation** — effects on the organization's public standing.
-- **Risk level** — the level of risk associated with the chosen response.
+### Procedural Audio
+The Web Audio API generates wheel ticks and outcome-confirmation sounds without requiring external audio files.
 
-### 🔊 Procedural Audio Feedback
-Experience wheel ticks and outcome-confirmation sounds generated using the Web Audio API, without requiring external audio assets.
+### Modern Frontend Architecture
+Built with React, TypeScript, Vite, and Tailwind CSS for a modular and maintainable frontend.
 
-### ⚡ Modern Frontend Architecture
-Built with React, TypeScript, Vite, and Tailwind CSS for a component-based interface and a modern development workflow.
+## Industry Sectors
 
----
-
-## 🏭 Industry Sectors
-
-| Industry | Focus |
+| Sector | Focus |
 |---|---|
-| 🤖 Technology & AI | Artificial intelligence, technology operations, and corporate responsibility |
-| 🎮 Gaming & Entertainment | Gaming businesses, entertainment platforms, and industry challenges |
-| ❤️ Health Tech & Wearables | Digital health, wearable technology, and healthcare-related challenges |
-| 🚗 EV & Smart Mobility | Electric vehicles, mobility technology, and connected transportation |
+| Technology & AI | Artificial intelligence, technology operations, and corporate responsibility |
+| Gaming & Entertainment | Gaming businesses and entertainment platforms |
+| Health Tech & Wearables | Digital health and wearable technology |
+| EV & Smart Mobility | Electric vehicles and intelligent mobility solutions |
 
-The application features **16 corporate crisis scenarios** distributed across these sectors.
+The application includes 16 corporate crisis scenarios distributed across these sectors.
 
----
+## How It Works
 
-## 🕹️ How It Works
+1. **Select an industry** — Choose one of the four available sectors.
+2. **Spin the wheel** — Select a corporate crisis scenario.
+3. **Assess the situation** — Review the crisis context and boardroom challenge.
+4. **Make a decision** — Choose from the available strategic options.
+5. **Analyze the outcome** — Review the projected financial, reputational, and risk consequences.
 
-**01 — Select an Industry**
-
-Choose one of the four available industry sectors.
-
-**02 — Spin the Wheel**
-
-Launch the interactive wheel to select a crisis scenario.
-
-**03 — Assess the Crisis**
-
-Review the scenario's context, business challenge, and available strategic options.
-
-**04 — Make a Decision**
-
-Choose a response based on the information presented.
-
-**05 — Analyze the Consequences**
-
-Review the projected financial impact, reputation effects, risk level, and strategic outcome.
-
----
-
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| [React 19](https://react.dev/) | Component-based user interface |
-| [TypeScript](https://www.typescriptlang.org/) | Static typing and maintainable application code |
-| [Vite](https://vite.dev/) | Development server and production build tooling |
-| [Tailwind CSS v4](https://tailwindcss.com/) | Utility-first styling |
-| HTML5 Canvas | Interactive wheel rendering and animation |
+| React 19 | Component-based user interface |
+| TypeScript | Static typing and maintainable code |
+| Vite | Development server and production build tooling |
+| Tailwind CSS v4 | Utility-first styling |
+| HTML5 Canvas | Interactive wheel rendering |
 | Web Audio API | Procedural sound generation |
-| [Lucide React](https://lucide.dev/) | Interface icons |
+| Lucide React | Interface icons |
 
----
+## Getting Started
 
-## ⚙️ Getting Started
+Follow these steps to run the project locally.
 
 ### Prerequisites
 
-- **Node.js** — v18 or later recommended
-- **npm** — included with Node.js
+- Node.js v18 or later recommended
+- npm
 
-Check your installed versions:
+Verify your installation:
 
 ```bash
 node --version
 npm --version
 ```
 
-### 1. Clone the Repository
+### Installation
+
+**1. Clone the repository**
 
 ```bash
 git clone <your-repository-url>
 ```
 
-Navigate to the project directory:
+**2. Navigate to the project directory**
 
 ```bash
 cd <project-directory>
 ```
 
-Replace the placeholders with your actual repository URL and directory name.
+Replace the placeholders with your repository URL and project directory.
 
-### 2. Install Dependencies
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-### 3. Start the Development Server
+**4. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal. The development server is configured for port `3000`.
+Open the local URL displayed in your terminal. The application is configured to use port `3000`.
 
-If Vite selects a different port because the configured port is unavailable, use the URL shown in the terminal.
-
-### 4. Create a Production Build
+**5. Build for production**
 
 ```bash
 npm run build
 ```
 
-The production build is generated in the `dist/` directory.
+The production files are generated in the `dist/` directory.
 
-### 5. Preview the Production Build
+**6. Preview the production build**
 
 ```bash
 npm run preview
 ```
 
----
-
-## 📜 Available Scripts
+## Available Scripts
 
 | Command | Description |
 |---|---|
 | `npm run dev` | Starts the development server |
-| `npm run build` | Builds the application for production |
+| `npm run build` | Creates a production build |
 | `npm run preview` | Previews the production build locally |
 | `npm run clean` | Removes build artifacts |
 | `npm run lint` | Runs the TypeScript check using `tsc --noEmit` |
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
 src/
-├── App.tsx                  # Application shell and state management
-├── types.ts                 # TypeScript interfaces and types
-├── data.ts                  # Industry sectors and crisis scenarios
-│
+├── App.tsx
+├── types.ts
+├── data.ts
 ├── lib/
-│   └── audio.ts             # Procedural audio synthesis
-│
+│   └── audio.ts
 └── components/
-    ├── SectorSelector.tsx   # Industry selection interface
-    ├── SpinWheel.tsx        # Canvas-based interactive wheel
-    └── CrisisDetails.tsx    # Crisis information and decisions
+    ├── SectorSelector.tsx
+    ├── SpinWheel.tsx
+    └── CrisisDetails.tsx
 ```
 
-### Core Components
+### Core Files
 
-**`App.tsx`** — Coordinates application flow and state.
+| File | Responsibility |
+|---|---|
+| `App.tsx` | Main application shell and state management |
+| `types.ts` | Shared TypeScript interfaces and types |
+| `data.ts` | Industry definitions and crisis scenario data |
+| `lib/audio.ts` | Procedural audio synthesis |
+| `components/SectorSelector.tsx` | Industry selection interface |
+| `components/SpinWheel.tsx` | Canvas-based spinning wheel |
+| `components/CrisisDetails.tsx` | Crisis information and strategic decisions |
 
-**`SectorSelector.tsx`** — Provides the industry selection interface.
+## Application Architecture
 
-**`SpinWheel.tsx`** — Renders and manages the interactive canvas-based wheel.
+The application is organized into several functional layers:
 
-**`CrisisDetails.tsx`** — Presents crisis information and strategic options.
+- **User interface:** React components present the industry selector, wheel, and crisis details.
+- **Scenario data:** Centralized definitions hold sector and crisis information.
+- **Application state:** Coordinates the simulation flow and user interactions.
+- **Graphics:** HTML5 Canvas renders the interactive wheel.
+- **Audio:** The Web Audio API generates sound effects at runtime.
 
-**`data.ts`** — Organizes sector definitions and crisis content.
+This structure separates presentation, scenario content, interaction logic, graphics, and audio functionality.
 
-**`types.ts`** — Defines shared TypeScript interfaces, including `Sector`, `Crisis`, and `StrategicOption`.
+## License
 
-**`lib/audio.ts`** — Generates procedural audio feedback through the Web Audio API.
-
----
-
-## 🧱 Application Architecture
-
-Wheel of Crisis follows a component-based React architecture.
-
-- **Presentation layer:** Renders industry selection, the crisis wheel, and decision screens.
-- **Scenario data layer:** Stores sector definitions and crisis content.
-- **Interaction layer:** Coordinates simulation progression and user decisions.
-- **Graphics layer:** Uses HTML5 Canvas for wheel rendering.
-- **Audio layer:** Uses the Web Audio API to generate sound effects.
-
-This separation keeps the interface, scenario content, interactive graphics, and audio functionality organized and maintainable.
-
----
-
-## 🔒 License
-
-**Private project — not licensed for public distribution.**
-
-All rights are reserved unless otherwise specified by the project owner.
+This is a private project and is not licensed for public distribution. All rights are reserved unless otherwise specified by the project owner.
 
 ---
 
 <p align="center">
   <strong>Wheel of Crisis</strong><br />
-  <em>Every crisis demands a decision. Every decision has consequences.</em><br /><br />
-  <a href="https://wheelofcrisis.gt.tc/?i=1">Visit the Live Website ↗</a>
+  Every crisis demands a decision. Every decision has consequences.
+  <br /><br />
+  <a href="https://wheelofcrisis.gt.tc/?i=1">Visit the Live Application</a>
 </p>
