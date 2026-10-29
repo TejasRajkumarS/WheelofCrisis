@@ -1,21 +1,70 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Wheel of Crisis
 
-# Run and deploy your AI Studio app
+An interactive strategic simulation where users navigate high-stakes corporate crises across four industry sectors. Select a sector, spin the wheel, and make boardroom decisions with measurable consequences — financial impact, reputation effects, and risk levels.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/996f4c90-7a9f-4e22-84da-f8e6b05b13b9
+This application delivers an engaging crisis-resolution experience through:
 
-## Run Locally
+- **4 Industries:** Technology & AI, Gaming & Entertainment, Health Tech & Wearables, EV & Smart Mobility
+- **16 Corporate Crises:** Each with unique context, boardroom challenges, and strategic choices
+- **Interactive Wheel:** Physics-based canvas simulation with tactile feedback
+- **Decision Outcomes:** Real-time consequence analysis including risk level, projected capital impact, and reputation effects
+- **Audio Feedback:** Procedural sound synthesis for spin ticks and win confirmation
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- **Frontend:** React 19 + TypeScript + Vite
+- **Styling:** Tailwind CSS v4 with custom animations
+- **Graphics:** HTML5 Canvas for the interactive spin wheel
+- **Audio:** Web Audio API (no external assets required)
+- **Icons:** Lucide React
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# WheelofCrisis
+## Prerequisites
+
+- Node.js (v18 or later recommended)
+- npm
+
+## Running Locally
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server (port 3000) |
+| `npm run build` | Production build to `dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run clean` | Remove build artifacts |
+| `npm run lint` | TypeScript type check (`tsc --noEmit`) |
+
+## Project Structure
+
+```
+src/
+├── App.tsx              # Main application shell and state machine
+├── types.ts             # TypeScript interfaces (Sector, Crisis, StrategicOption)
+├── data.ts              # Crisis content and sector definitions
+├── lib/audio.ts         # Web Audio API sound synthesizer
+├── components/
+│   ├── SectorSelector.tsx   # Industry selection landing page
+│   ├── SpinWheel.tsx        # Canvas-based physics spin wheel
+│   └── CrisisDetails.tsx    # Crisis detail and strategic decision view
+```
+
+## License
+
+Private project — not licensed for distribution.

@@ -1,0 +1,6 @@
+{
+  "name": "Wheel of Crisis",
+  "description": "An interactive spinning wheel application allowing users to navigate high-stakes boardroom crises across technology, gaming, health tech, and EV sectors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
